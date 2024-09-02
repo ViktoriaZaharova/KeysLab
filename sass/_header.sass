@@ -1,0 +1,166 @@
+@import "vars"
+
+//header
+header
+	width: 100%
+	display: block
+	border: 1px solid #C8C8C8
+	padding: 23px 0
+	background: #fff 
+	.container
+		align-items: center
+
+
+.list-message
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 0 0 auto
+	font-size: 12px
+
+	li
+		display: flex
+		align-items: center
+
+		&:after
+			content: '//'
+			display: inline-block
+			margin: 0 10px
+
+		&:last-child
+			&:after
+				display: none
+
+		a
+			color: $black
+			display: flex
+			align-items: center
+
+			&:hover
+				color: $accent
+
+.phone
+	color: $black
+
+	&:hover
+		color: $accent
+
+.list-message__icon-telegram
+	width: 14px
+	height: 12px
+	fill: $input
+	margin: 0 8px 0 0
+
+// .header-center
+// 	padding: 24px 0
+
+// 	.container
+// 		justify-content: space-between
+
+.logo
+	text-transform: uppercase
+	color: #202020
+	font-size: 14px
+	font-weight: bold
+
+	&:hover
+		color: #202020
+
+.btn-menu
+	display: flex
+	align-items: center
+	font-size: 14px
+	color: $black
+	stroke: $black
+	text-transform: uppercase
+
+	&__icon
+		margin: 0 10px 0 0
+		width: 32px
+		height: 32px
+
+	&:hover
+		color: $black
+
+// .btn-cabinet, .btn-search
+// 	fill: none
+// 	stroke: $black
+
+.header-nav
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+
+	li
+		border-left: 1px solid #DEDEDE
+		&:first-child
+			border: none
+			a
+				padding-left: 0
+		&:last-child
+			.header-nav__links
+				padding-right: 0
+		.btn-basket
+			display: none
+
+.header-nav__links 
+	display: flex
+	align-items: center
+	padding: 0 16px
+	color: $black
+	font-size: 14px
+	fill: none
+	stroke: #202020
+	&:hover
+		stroke: $accent
+
+.header-nav__links-icon
+	width: 24px
+	min-width: 24px
+	height: 24px
+	padding: 4px
+	display: flex
+	align-items: center
+	justify-content: center
+	
+
+// .link-tg, .link-phone
+
+// 	display: flex
+// 	align-items: center
+// 	justify-content: center
+
+// 	.header-nav__links-icon
+// 		padding: 0
+
+// .link-phone
+// 	fill: #202020
+// 	stroke: none
+
+.btn-basket__val
+	margin: 0 0 0 4px
+
+.header-bottom
+	padding: 24px 0
+	border-top: 1px solid #DEDEDE
+	border-bottom: 1px solid #DEDEDE
+
+.products-category
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 0 auto
+	text-transform: uppercase
+	font-size: 12px
+
+	li
+		margin: 0 40px 0 0
+
+		&:last-child
+			margin: 0
+
+		a
+			color: $black
+
+			&:hover
+				color: $accent
