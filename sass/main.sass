@@ -1064,11 +1064,15 @@ h3
 header
 	width: 100%
 	display: block
-	border: 1px solid #C8C8C8
-	padding: 23px 0
+	border-bottom: 1px solid #C8C8C8
+
 	background: #fff
 	.container
 		align-items: center
+
+.header-top
+	width: 100%
+	padding: 23px 0
 
 .list-message
 	display: flex
@@ -1110,8 +1114,10 @@ header
 	fill: $input
 	margin: 0 8px 0 0
 
-// .header-center
-// 	padding: 24px 0
+.header-center
+	display: none
+	padding: 25px 0
+	border-top: 1px solid #dedede
 
 // 	.container
 // 		justify-content: space-between
@@ -1159,7 +1165,7 @@ header
 		&:last-child
 			.header-nav__links
 				padding-right: 0
-		.btn-basket
+		.btn-basket, .btn-menu
 			display: none
 
 .header-nav__links
@@ -1207,6 +1213,7 @@ header
 	display: flex
 	align-items: center
 	justify-content: center
+	text-align: center
 	margin: 0 auto
 	text-transform: uppercase
 	font-size: 12px
@@ -1967,6 +1974,8 @@ header
 		border: 1px solid #fff
 		border-radius: 50%
 		stroke: #fff
+	.menu-links
+		color: $black
 
 .modal__div2
 	.modal-body
@@ -1991,6 +2000,7 @@ header
 	z-index: 1
 	position: relative
 	width: 100%
+	color: $black
 	&:before
 		content: ''
 		position: absolute
@@ -2197,10 +2207,10 @@ header
 	.modal-head
 		border: none
 
-	.modal__close
-		width: 100px
-		height: 100px
-		padding: 25px
+	// .modal__close
+	// 	width: 100px
+	// 	height: 100px
+	// 	padding: 25px
 
 	.modal-body
 		padding: 0
@@ -2211,8 +2221,8 @@ header
 		align-items: flex-start
 		justify-content: flex-end
 	.scroll-horizontal
-	&::-webkit-scrollbar-thumb
-		background: transparent
+		&::-webkit-scrollbar-thumb
+			background: transparent
 
 .search-example
 	width: 100%
@@ -2443,7 +2453,7 @@ header
 	display: flex
 	align-content: center
 	flex-wrap: wrap
-	font-size: 10px
+	font-size: 12px
 	color: #202020
 	width: 100%
 	a
@@ -2460,7 +2470,7 @@ header
 			background: url("../img/arrow-right.svg") no-repeat center
 			size: 100%
 		&:hover
-			color: $accent	
+			color: $accent
 
 .page
 	h1
@@ -3421,10 +3431,10 @@ header
 	.amount
 		margin: 0 8px
 		input
-			width: 61px
+			width: 60px
 		span
-			width: 61px
-			min-width: 61px
+			width: 60px
+			min-width: 60px
 
 	.price-wrapper
 		width: fit-content
@@ -3453,6 +3463,7 @@ header
 
 .article-number
 	margin-left: auto
+	width: fit-content
 
 .rating-reviews-link
 	color: #454545
@@ -3511,6 +3522,7 @@ header
 		background-size: 100%
 
 .hot-offer
+	width: fit-content
 	display: flex
 	align-items: center
 	padding: 6px 12px
@@ -3796,6 +3808,18 @@ header
 			margin: 0 2px 0 0
 			&:last-child
 				margin: 0
+			&.star0
+				fill: #b7b7b7
+	.d-mobile
+		display: none
+
+.product-page-row-mobile
+	width: 100%
+	display: none
+	align-items: center
+	flex-wrap: wrap
+	font-size: 12px
+			
 
 .rating-details
 	width: 100%
@@ -3887,7 +3911,7 @@ header
 		height: 100%
 		object-fit: cover
 	&:last-child
-		margin: 0	0 8px	
+		margin: 0	0 8px
 	span
 		position: absolute
 		left: 0
@@ -3902,7 +3926,152 @@ header
 		background: rgba(#000, .25)
 		color: #fff
 		font-size: 20px
-		font-weight: 600	
+		font-weight: 600
+
+.reviews-filter
+	display: flex
+	align-items: center
+	margin: 0 0 16px
+	p
+		margin: 0 16px 0 0
+		font-size: 18px
+		font-weight: 500
+	&__select
+		margin: 0 0 8px
+		display: none
+
+.reviews-filter-list
+	display: flex
+	align-items: center
+	li
+		margin: 0 16px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: #454545
+			&.active
+				font-weight: 500
+				color: $accent
+			&:hover
+				color: $accent
+
+.reviews-card
+	width: 100%
+	margin: 0 0 16px
+	background: #fafafa
+	padding: 24px
+	&:last-child
+		margin: 0
+	&__head
+		width: 100%
+		display: flex
+		align-items: flex-start
+	&__date
+		margin: 0 0 0 auto
+		font-size: 14px
+		color: #454545
+	&__user
+		display: flex
+		align-items: flex-start
+	&__avatar
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 50%
+		margin: 0 16px 0 0
+		width: 40px
+		height: 40px
+		min-width: 40px
+		font-size: 20px
+		font-weight: 500
+		color: #fff
+		&.bg-red
+			background: #FF6161
+		&.bg-blue
+			background: #6197FF
+		&.bg-green
+			background: #1C9B9B
+	&__name
+		h4
+			font-weight: 500
+			font-size: 16px
+	.version-product
+		margin: 8px 0 0
+		text-decoration: underline
+		font-size: 14px
+		color: #666666
+		&:hover
+			color: $accent
+	&__body
+		padding: 0 0 0 56px
+		width: 100%
+		margin: 24px 0
+		.box-text
+			font-size: 16px
+	&__footer
+		width: 100%
+		display: flex
+		align-items: flex-end
+		flex-wrap: wrap
+		padding: 0 0 0 56px
+	&__grade
+		margin: 0 0 0 auto
+		display: flex
+		align-items: center
+	&__gallery
+		display: flex
+		align-items: stretch
+		&-item
+			width: 146px
+			height: 100px
+			display: flex
+			align-items: center
+			justify-content: center
+			margin: 0 16px 0 0
+			&:last-child
+				margin: 0
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+
+.grade-item
+	display: flex
+	align-items: center
+	margin: 0 0 0 16px
+	font-size: 16px
+	font-weight: 500
+	color: #008000
+
+	svg
+		width: 24px
+		height: 24px
+		min-width: 24px
+		stroke: #202020
+		fill: none
+	&:hover, &:focus
+		svg
+			stroke: $accent
+	span
+		min-width: 40px
+		text-align: center
+		margin: 0 0 0 16px
+		background: #F0F8E1
+		padding: 8px 6px
+		&.dislike
+			background: rgba($red, .1)
+			color: $red
+
+.select-my
+	width: 100%
+	appearance: none
+	border: none
+	padding: 0 40px 0 16px
+	height: 48px
+	font-size: 16px
+	font-weight: normal
+	background: #fafafa url('../img/select-arrow.svg') no-repeat calc(100% - 16px) center
+	background-size: 24px
 
 // footer
 footer

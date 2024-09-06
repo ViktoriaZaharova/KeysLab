@@ -46,61 +46,79 @@
 <body>
 
 	<header>
-		<div class="container container-my">
-			<!-- <a href="#menu__modal" class="btn-menu open_modal">
-	        <span class="btn-menu__icon icon-wrap"><svg class="svg-icon"><use
-	            xlink:href="img/sprite.svg#burger"></use></svg></span>
-	        <span class="btn-menu__text">Меню</span>
-	      </a> -->
+		<div class="header-top">
+			<div class="container">
+				
+	
+				<a href="index.html" class="logo"><img src="img/logo-header.svg" alt=""></a>
+	
+				<ul class="products-category">
+					<li><a href="catalog-new.html">каталог</a></li>
+					<li><a href="#">WINDOWS</a></li>
+					<li><a href="#">office</a></li>
+					<li><a href="#">autodesk</a></li>
+					<li><a href="#">офисные приложения</a></li>
+				</ul>
+	
+				<ul class="header-nav">
+					<li>
+						<a href="#search__modal" class="header-nav__links btn-search open_modal">
+							<span class="header-nav__links-icon icon-wrap"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg></span>
+						</a>
+					</li>
+					<li>
+						<a href="#login__modal" class="header-nav__links btn-cabinet open_modal">
+							<span class="header-nav__links-icon icon-wrap"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#user"></use>
+								</svg></span>
+						</a>
+					</li>
+					<li>
+						<a href="#basket__modal" class="header-nav__links btn-basket open_modal">
+							<span class="header-nav__links-icon icon-wrap"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#basket"></use>
+								</svg></span>
+							<span class="btn-basket__val">0</span>
+						</a>
+					</li>
+					<li>
+						<a href="#menu__modal" class="header-nav__links btn-menu open_modal">
+							<span class="btn-menu__icon icon-wrap"><svg class="svg-icon"><use
+									xlink:href="img/sprite.svg#burger"></use></svg></span>
+							<!-- <span class="btn-menu__text">Меню</span> -->
+						</a>
+					</li>
+					<li class="header-nav__item-phone">
+						<a href="tel:+73432264625" class="header-nav__links btn-cabinet link-phone">
+							<span class="header-nav__links-icon icon-wrap"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#phone"></use>
+								</svg></span>
+						</a>
+					</li>
+					<li class="header-nav__item-telegram">
+						<a href="#" class="header-nav__links btn-cabinet link-tg">
+							<span class="header-nav__links-icon icon-wrap"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#tg"></use>
+								</svg></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-			<a href="index.html" class="logo"><img src="img/logo-header.svg" alt=""></a>
-
-			<ul class="products-category">
-				<li><a href="catalog-new.html">каталог</a></li>
-				<li><a href="#">WINDOWS</a></li>
-				<li><a href="#">office</a></li>
-				<li><a href="#">autodesk</a></li>
-				<li><a href="#">офисные приложения</a></li>
-			</ul>
-
-			<ul class="header-nav">
-				<li>
-					<a href="#search__modal" class="header-nav__links btn-search open_modal">
-						<span class="header-nav__links-icon icon-wrap"><svg class="svg-icon">
-								<use xlink:href="img/sprite.svg#search"></use>
-							</svg></span>
-					</a>
-				</li>
-				<li>
-					<a href="#login__modal" class="header-nav__links btn-cabinet open_modal">
-						<span class="header-nav__links-icon icon-wrap"><svg class="svg-icon">
-								<use xlink:href="img/sprite.svg#user"></use>
-							</svg></span>
-					</a>
-				</li>
-				<li>
-					<a href="#basket__modal" class="header-nav__links btn-basket open_modal">
-						<span class="header-nav__links-icon icon-wrap"><svg class="svg-icon">
-								<use xlink:href="img/sprite.svg#basket"></use>
-							</svg></span>
-						<span class="btn-basket__val">0</span>
-					</a>
-				</li>
-				<li class="header-nav__item-phone">
-					<a href="tel:+73432264625" class="header-nav__links btn-cabinet link-phone">
-						<span class="header-nav__links-icon icon-wrap"><svg class="svg-icon">
-								<use xlink:href="img/sprite.svg#phone"></use>
-							</svg></span>
-					</a>
-				</li>
-				<li class="header-nav__item-telegram">
-					<a href="#" class="header-nav__links btn-cabinet link-tg">
-						<span class="header-nav__links-icon icon-wrap"><svg class="svg-icon">
-								<use xlink:href="img/sprite.svg#tg"></use>
-							</svg></span>
-					</a>
-				</li>
-			</ul>
+		<div class="header-center">
+			<div class="container">
+	
+				<ul class="products-category">
+					<li><a href="catalog-new.html">каталог</a></li>
+					<li><a href="#">WINDOWS</a></li>
+					<li><a href="#">office</a></li>
+					<li><a href="#">autodesk</a></li>
+					<li><a href="#">офисные приложения</a></li>
+				</ul>
+			</div>
 		</div>
 	</header>
 
@@ -113,6 +131,15 @@
 				<li><a href="catalog.html">Windows</a></li>
 				<li><span>Microsoft Windows 10 Professional x32/x64</span></li>
 			</ul>
+
+			<div class="product-page-row-mobile">
+				<div class="hot-offer">
+					<!-- <div class="hot-offer__icon"><img src="img/hot.svg" alt=""></div> -->
+					<span>Горячее предложение</span>
+				</div>
+
+				<div class="article-number">Артикул: MTWS-100</div>
+			</div>
 
 			<div class="w-100">
 				<div class="row">
@@ -525,7 +552,7 @@
 							<div class="reviews-head w-100">
 								<div class="w-100">
 									<div class="row align-items-center">
-										<div class="col-6 mb-20">
+										<div class="col-6 mb-20 p-16">
 											<div class="rating-product">
 												<div class="rating-product__value">4.8</div>
 												<div class="rating-product__text">
@@ -548,9 +575,10 @@
 															</svg></li>
 													</ul>
 												</div>
+												<p class="d-mobile">На основании 246 отзывов</p>
 											</div>
 										</div>
-										<div class="col-6 mb-20">
+										<div class="col-6 mb-20 p-16">
 											<div class="box-text">
 												<p>Отзывы пишут только те, кто купил у нас ключ. Мы честны перед клиентами</p>
 											</div>
@@ -639,15 +667,45 @@
 										<div class="reviews-filter">
 											<p>Сначала:</p>
 											<ul class="reviews-filter-list">
-												<li class="active">полезные</li>												
-												<li>новые</li>
-												<li>отзывы с фото</li>
+												<li><a href="#" class="active">полезные</a></li>
+												<li><a href="#">новые</a></li>
+												<li><a href="#">отзывы с фото</a></li>
 											</ul>
 										</div>
 
+										<select name="select" class="reviews-filter__select select-my">
+											<option value="Сначала новые">Сначала новые</option>
+											<option value="Сначала полезные">Сначала полезные</option>
+											<option value="Отзывы с фото">Отзывы с фото</option>
+										</select>
+
 										<div class="reviews-card">
 											<div class="reviews-card__head">
-
+												<div class="reviews-card__user">
+													<div class="reviews-card__avatar bg-red">В</div>
+													<div class="reviews-card__name">
+														<h4>Владимир Булгаков</h4>
+														<a href="#" class="version-product">Версия Pro</a>
+														<ul class="rating-product__stars">
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+														</ul>
+													</div>
+												</div>
+												<div class="reviews-card__date">2 дня назад</div>
 											</div>
 											<div class="reviews-card__body">
 												<div class="box-text">
@@ -661,6 +719,130 @@
 												<div class="reviews-card__gallery">
 													<a href="#" class="reviews-card__gallery-item" data-fancybox="gallery-reviews"
 														data-src="#gallery-reviews-hidden1"><img src="img/reviews-img1.jpg" alt=""></a>
+												</div>
+
+												<div class="reviews-card__grade">
+													<a href="#" class="grade-item">
+														<svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#like"></use>
+														</svg>
+														<span>+25</span>
+													</a>
+
+													<a href="#" class="grade-item">
+														<svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#dislike"></use>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="reviews-card">
+											<div class="reviews-card__head">
+												<div class="reviews-card__user">
+													<div class="reviews-card__avatar bg-blue">П</div>
+													<div class="reviews-card__name">
+														<h4>Павел Петров</h4>
+														<a href="#" class="version-product">Версия Pro</a>
+														<ul class="rating-product__stars">
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+														</ul>
+													</div>
+												</div>
+												<div class="reviews-card__date">2 дня назад</div>
+											</div>
+											<div class="reviews-card__body">
+												<div class="box-text">
+													<p>Я давно хотел обновить свою операционную систему до Windows 10 Pro, но не знал, как это сделать. Решил купить электронный ключ на вашем сайте и не пожалел! Активация прошла быстро и легко, а качество продукта меня приятно удивило. Теперь пользуюсь всеми преимуществами Windows 10 Pro! Спасибо за отличный сервис!</p>
+												</div>
+											</div>
+											<div class="reviews-card__footer">
+												<div class="reviews-card__gallery">
+													<a href="#" class="reviews-card__gallery-item" data-fancybox="gallery-reviews"
+														data-src="#gallery-reviews-hidden1"><img src="img/reviews-img2.jpg" alt=""></a>
+												</div>
+
+												<div class="reviews-card__grade">
+													<a href="#" class="grade-item">
+														<svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#like"></use>
+														</svg>
+														<span>+8</span>
+													</a>
+
+													<a href="#" class="grade-item">
+														<svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#dislike"></use>
+														</svg>
+													</a>
+												</div>
+											</div>
+										</div>
+
+										<div class="reviews-card">
+											<div class="reviews-card__head">
+												<div class="reviews-card__user">
+													<div class="reviews-card__avatar bg-green">В</div>
+													<div class="reviews-card__name">
+														<h4>Александр Коврин</h4>
+														<a href="#" class="version-product">Версия Pro</a>
+														<ul class="rating-product__stars">
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+															<li class="star0"><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#star"></use>
+																</svg></li>
+														</ul>
+													</div>
+												</div>
+												<div class="reviews-card__date">2 дня назад</div>
+											</div>
+											<div class="reviews-card__body">
+												<div class="box-text">
+													<p>Очень рекомендую. Служба поддержки молодцы! Огромное им спасибо. Не могла активировать Windows, были проблемы с моим компьютером. Ребята потратили время, подключились все сделали. Спасибо службе поддержки!</p>
+												</div>
+											</div>
+											<div class="reviews-card__footer">
+
+												<div class="reviews-card__grade">
+													<a href="#" class="grade-item">
+														<svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#like"></use>
+														</svg>
+														<span>+7</span>
+													</a>
+
+													<a href="#" class="grade-item">
+														<svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#dislike"></use>
+														</svg>
+														<span class="dislike">-7</span>
+													</a>
 												</div>
 											</div>
 										</div>
@@ -687,7 +869,7 @@
 			</div>
 
 			<div class="w-100">
-				<div class="row">
+				<div class="row interesting-scroll-horizontal">
 					<div class="col-4 p-16 product-col">
 						<div class="product-card">
 							<div class="product-card__info">

@@ -1136,12 +1136,16 @@ h3 {
 header {
   width: 100%;
   display: block;
-  border: 1px solid #C8C8C8;
-  padding: 23px 0;
+  border-bottom: 1px solid #C8C8C8;
   background: #fff;
 }
 header .container {
   align-items: center;
+}
+
+.header-top {
+  width: 100%;
+  padding: 23px 0;
 }
 
 .list-message {
@@ -1184,6 +1188,12 @@ header .container {
   height: 12px;
   fill: #666666;
   margin: 0 8px 0 0;
+}
+
+.header-center {
+  display: none;
+  padding: 25px 0;
+  border-top: 1px solid #dedede;
 }
 
 .logo {
@@ -1230,7 +1240,7 @@ header .container {
 .header-nav li:last-child .header-nav__links {
   padding-right: 0;
 }
-.header-nav li .btn-basket {
+.header-nav li .btn-basket, .header-nav li .btn-menu {
   display: none;
 }
 
@@ -1271,6 +1281,7 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
   font-size: 12px;
@@ -2119,6 +2130,9 @@ header .container {
   border-radius: 50%;
   stroke: #fff;
 }
+.modal__div-menu .menu-links {
+  color: #202020;
+}
 
 .modal__div2 .modal-body {
   height: calc(100% - 73px - 120px);
@@ -2146,6 +2160,7 @@ header .container {
   z-index: 1;
   position: relative;
   width: 100%;
+  color: #202020;
 }
 .menu-links:before {
   content: "";
@@ -2376,11 +2391,6 @@ header .container {
 .modal__div-search .modal-head {
   border: none;
 }
-.modal__div-search .modal__close {
-  width: 100px;
-  height: 100px;
-  padding: 25px;
-}
 .modal__div-search .modal-body {
   padding: 0;
   max-width: 784px;
@@ -2390,7 +2400,7 @@ header .container {
   align-items: flex-start;
   justify-content: flex-end;
 }
-.modal__div-search::-webkit-scrollbar-thumb {
+.modal__div-search .scroll-horizontal::-webkit-scrollbar-thumb {
   background: transparent;
 }
 
@@ -2670,7 +2680,7 @@ header .container {
   display: flex;
   align-content: center;
   flex-wrap: wrap;
-  font-size: 10px;
+  font-size: 12px;
   color: #202020;
   width: 100%;
 }
@@ -3727,11 +3737,11 @@ header .container {
   margin: 0 8px;
 }
 .product-page .amount input {
-  width: 61px;
+  width: 60px;
 }
 .product-page .amount span {
-  width: 61px;
-  min-width: 61px;
+  width: 60px;
+  min-width: 60px;
 }
 .product-page .price-wrapper {
   width: -moz-fit-content;
@@ -3768,6 +3778,8 @@ header .container {
 
 .article-number {
   margin-left: auto;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .rating-reviews-link {
@@ -3837,6 +3849,8 @@ header .container {
 }
 
 .hot-offer {
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
   align-items: center;
   padding: 6px 12px;
@@ -4171,6 +4185,20 @@ header .container {
 .rating-product__stars li:last-child {
   margin: 0;
 }
+.rating-product__stars li.star0 {
+  fill: #b7b7b7;
+}
+.rating-product .d-mobile {
+  display: none;
+}
+
+.product-page-row-mobile {
+  width: 100%;
+  display: none;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
 
 .rating-details {
   width: 100%;
@@ -4299,6 +4327,186 @@ header .container {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
+}
+
+.reviews-filter {
+  display: flex;
+  align-items: center;
+  margin: 0 0 16px;
+}
+.reviews-filter p {
+  margin: 0 16px 0 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.reviews-filter__select {
+  margin: 0 0 8px;
+  display: none;
+}
+
+.reviews-filter-list {
+  display: flex;
+  align-items: center;
+}
+.reviews-filter-list li {
+  margin: 0 16px 0 0;
+}
+.reviews-filter-list li:last-child {
+  margin: 0;
+}
+.reviews-filter-list li a {
+  color: #454545;
+}
+.reviews-filter-list li a.active {
+  font-weight: 500;
+  color: #CD5237;
+}
+.reviews-filter-list li a:hover {
+  color: #CD5237;
+}
+
+.reviews-card {
+  width: 100%;
+  margin: 0 0 16px;
+  background: #fafafa;
+  padding: 24px;
+}
+.reviews-card:last-child {
+  margin: 0;
+}
+.reviews-card__head {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.reviews-card__date {
+  margin: 0 0 0 auto;
+  font-size: 14px;
+  color: #454545;
+}
+.reviews-card__user {
+  display: flex;
+  align-items: flex-start;
+}
+.reviews-card__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 16px 0 0;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.reviews-card__avatar.bg-red {
+  background: #FF6161;
+}
+.reviews-card__avatar.bg-blue {
+  background: #6197FF;
+}
+.reviews-card__avatar.bg-green {
+  background: #1C9B9B;
+}
+.reviews-card__name h4 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.reviews-card .version-product {
+  margin: 8px 0 0;
+  text-decoration: underline;
+  font-size: 14px;
+  color: #666666;
+}
+.reviews-card .version-product:hover {
+  color: #CD5237;
+}
+.reviews-card__body {
+  padding: 0 0 0 56px;
+  width: 100%;
+  margin: 24px 0;
+}
+.reviews-card__body .box-text {
+  font-size: 16px;
+}
+.reviews-card__footer {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 0 0 0 56px;
+}
+.reviews-card__grade {
+  margin: 0 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+.reviews-card__gallery {
+  display: flex;
+  align-items: stretch;
+}
+.reviews-card__gallery-item {
+  width: 146px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 16px 0 0;
+}
+.reviews-card__gallery-item:last-child {
+  margin: 0;
+}
+.reviews-card__gallery-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grade-item {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #008000;
+}
+.grade-item svg {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  stroke: #202020;
+  fill: none;
+}
+.grade-item:hover svg, .grade-item:focus svg {
+  stroke: #CD5237;
+}
+.grade-item span {
+  min-width: 40px;
+  text-align: center;
+  margin: 0 0 0 16px;
+  background: #F0F8E1;
+  padding: 8px 6px;
+}
+.grade-item span.dislike {
+  background: rgba(255, 0, 0, 0.1);
+  color: #FF0000;
+}
+
+.select-my {
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  padding: 0 40px 0 16px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: normal;
+  background: #fafafa url("../img/select-arrow.svg") no-repeat calc(100% - 16px) center;
+  background-size: 24px;
 }
 
 footer {
