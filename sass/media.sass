@@ -1019,6 +1019,23 @@
     .contacts-box
       margin: 0
 
+  .gallery-reviews-hidden
+    padding: 48px 16px
+    .col-6
+      width: 100%
+    &__body
+      padding: 40px 0 0
+    &__photo
+      background: transparent
+      padding: 0
+      margin: 0 0 60px
+
+  .is-compact .fancybox__content > .f-button.is-close-btn, .fancybox__content > .f-button.is-close-btn
+    right: 16px
+
+  .fancybox__slide
+    padding: 0
+
 @media only screen and (max-width: 650px)
   .product-page
     &__head
@@ -1740,7 +1757,7 @@
     h3
       font-size: 18px
     .box-text
-      font-size: 14px  
+      font-size: 14px
 
   .attention-box
     padding: 16px
@@ -1787,7 +1804,7 @@
           font-size: 14px
 
   .information-details .panel_heading h4
-    font-size: 14px        
+    font-size: 14px
 
   .politics-box
     .box-text
@@ -1838,7 +1855,25 @@
     height: 136px
 
   .breadcrumb
-    margin: 0 0 24px  
+    margin: 0 0 24px
+
+  .gallery-reviews-hidden
+    padding: 24px 12px
+    &__head
+      padding: 0 0 18px
+      h3
+        font-size: 18px
+    &__body
+      padding: 16px 0 0    
+    &__photo
+      margin: 0 0 24px
+    .reviews-card
+      background: #fafafa
+      padding: 16px  
+
+  .is-compact .fancybox__content > .f-button.is-close-btn, .fancybox__content > .f-button.is-close-btn
+    right: 12px
+    top: 24px    
 
 @media only screen and (max-width: 480px)
   .list-payment
@@ -1877,7 +1912,6 @@
 
   // header .logo
   //       transform: translate(20%, 0)
-
 
 @media only screen and (max-width: 370px)
   .news-card__info

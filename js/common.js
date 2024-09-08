@@ -192,9 +192,9 @@ $(function () {
     close.on('click', function () {
         modal
             .animate({
-                    opacity: 0,
-                    // top: '45%'
-                }, 200,
+                opacity: 0,
+                // top: '45%'
+            }, 200,
                 function () {
                     $(this).css('display', 'none');
                     overlay.fadeOut(400);
@@ -260,7 +260,7 @@ $(document).ready(function () {
         $(this).parents('.tabs').find('.js-tab-trigger.active').removeClass('active'); // 1
         $(this).addClass('active'); // 2
 
-         // 4
+        // 4
     });
 });
 
@@ -325,7 +325,7 @@ $(function () {
         $(this).toggleClass('active').next('.dropdown-menu').slideToggle();
     });
 
-    if($('.sidebar-menu .dropdown-toggle').hasClass('active')) {
+    if ($('.sidebar-menu .dropdown-toggle').hasClass('active')) {
         $('.sidebar-menu .dropdown-toggle.active').next('.dropdown-menu').slideDown();
     }
 
@@ -340,5 +340,8 @@ $(function () {
 
 
 Fancybox.bind('[data-fancybox]', {
-	// Custom options for all galleries
+    // Custom options for all galleries
+    Thumbs: false,
+    
+    // closeButton: false
 });    

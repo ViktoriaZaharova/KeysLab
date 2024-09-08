@@ -996,6 +996,26 @@
   .modal .contacts-box {
     margin: 0;
   }
+  .gallery-reviews-hidden {
+    padding: 48px 16px;
+  }
+  .gallery-reviews-hidden .col-6 {
+    width: 100%;
+  }
+  .gallery-reviews-hidden__body {
+    padding: 40px 0 0;
+  }
+  .gallery-reviews-hidden__photo {
+    background: transparent;
+    padding: 0;
+    margin: 0 0 60px;
+  }
+  .is-compact .fancybox__content > .f-button.is-close-btn, .fancybox__content > .f-button.is-close-btn {
+    right: 16px;
+  }
+  .fancybox__slide {
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 650px) {
   .product-page__head {
@@ -1814,6 +1834,29 @@
   }
   .breadcrumb {
     margin: 0 0 24px;
+  }
+  .gallery-reviews-hidden {
+    padding: 24px 12px;
+  }
+  .gallery-reviews-hidden__head {
+    padding: 0 0 18px;
+  }
+  .gallery-reviews-hidden__head h3 {
+    font-size: 18px;
+  }
+  .gallery-reviews-hidden__body {
+    padding: 16px 0 0;
+  }
+  .gallery-reviews-hidden__photo {
+    margin: 0 0 24px;
+  }
+  .gallery-reviews-hidden .reviews-card {
+    background: #fafafa;
+    padding: 16px;
+  }
+  .is-compact .fancybox__content > .f-button.is-close-btn, .fancybox__content > .f-button.is-close-btn {
+    right: 12px;
+    top: 24px;
   }
 }
 @media only screen and (max-width: 480px) {
