@@ -345,3 +345,12 @@ Fancybox.bind('[data-fancybox]', {
     
     // closeButton: false
 });    
+
+
+$(".countdown-time1").countdowntimer({
+    // dateAndTime: "2024/04/01 00:00:00",
+    hours : 1,
+    labelsFormat: true,
+    displayFormat: "HMS",
+    // currentTime: true,
+});

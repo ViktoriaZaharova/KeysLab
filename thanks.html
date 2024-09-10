@@ -25,6 +25,7 @@
 		rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="css/jQuery.countdownTimer.css">
 
 	<link rel="stylesheet" href="css/main.css">
 	<!-- <link rel="stylesheet" href="css/header.css">
@@ -165,9 +166,22 @@
 					</div>
 					<div class="col-6 mb-24 p-16">
 						<div class="order-box">
-<div class="personal-sale">
-	<h3>Персональная скидка <span class="color-red">15%</span> на ближайший час</h3>
-</div>
+							<div class="personal-sale">
+								<h3>Персональная скидка <strong class="color-accent">15%</strong> на ближайший час</h3>
+								<div class="copy-paste">
+									<span class="copy-paste__text">personalpromo-15</span>
+									<a href="#" class="copy-paste__link">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#copy"></use>
+										</svg></a>
+								</div>
+								<div class="copy-paste__description">* данный промокод действует в течении  1 часа</div>
+							</div>
+
+							<div class="timer-box">
+								<h3>осталось</h3>
+								<div class="countdown-time countdown-time1"></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1269,6 +1283,8 @@
 		integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script src="js/jQuery.countdownTimer.js"></script>
+	<script src="js/jQuery.countdownTimer-ru.js"></script>
 	<script src="js/common.js"></script>
 
 </body>
