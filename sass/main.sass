@@ -113,6 +113,9 @@ input, textarea, select
 	&::placeholder
 		color: $input
 
+textarea
+	resize: none		
+
 .input-my
 	height: 52px
 	padding: 0 20px
@@ -278,7 +281,7 @@ button, .btn
 	margin-bottom: 20px
 
 .mb-24
-	margin-bottom: 24px	
+	margin-bottom: 24px
 
 .mb-30
 	margin-bottom: 30px
@@ -2881,7 +2884,7 @@ header
 		margin: 0 0 0 auto
 	&__description
 		font-size: 14px
-		margin: 16px 0 0	
+		margin: 16px 0 0
 
 .copy-paste__link
 	display: flex
@@ -4176,7 +4179,6 @@ header
 		.btn-group
 			max-width: 480px
 			margin: 24px auto 0
-		
 
 .thanks-icon
 	margin: -48px auto 33px
@@ -4184,6 +4186,16 @@ header
 	align-items: center
 	justify-content: center
 	position: relative
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 0
+		transform: translate(-50%,0)
+		width: 552px
+		height: 64px
+		background: url('../img/confetti.svg') no-repeat center
+		background-size: 100%
 
 .order-box
 	width: 100%
@@ -4198,24 +4210,24 @@ header
 		font-size: 16px
 		li
 			&:last-child
-				border: none	
+				border: none
 				padding-bottom: 0
 	h3
 		text-transform: uppercase
 		font-weight: normal
 		margin: 0 0 16px
 		font-size: 24px
-		width: 100%		
+		width: 100%
 		strong
-			font-weight: 500	
+			font-weight: 500
 
 .personal-sale
-	width: calc(100% - 242px)	
+	width: calc(100% - 242px)
 	padding: 0 16px 30px 0
 	border-right: 1px solid #c8c8c8
 
 .timer-box
-	width: 242px	
+	width: 242px
 	padding: 30px 0 30px 16px
 
 .labelformat
@@ -4248,7 +4260,7 @@ header
 		display: inline-block
 		position: absolute
 		right: 7px
-		top: 20px	
+		top: 20px
 
 .numberDisplay
 	font-size: 22px
@@ -4259,7 +4271,7 @@ header
 	align-items: center
 	justify-content: center
 	text-align: center
-	background: rgba(#CD5237, .1)	
+	background: rgba(#CD5237, .1)
 	border-radius: 8px
 
 .periodDisplay
@@ -4270,25 +4282,201 @@ header
 	margin: 16px 0 0
 	text-transform: lowercase
 
+// page feedback
+.feedback-page
+	margin: 64px 0 120px
+	padding: 80px 0 0
+	&__description
+		max-width: 424px
+		width: 100%
+		background: rgb(250, 250, 250)
+		padding: 24px
+		h3
+			font-size: 20px
+			margin: 0 0 16px
+			width: 100%
+	&__content
+		width: calc(100% - 424px)
+		padding: 0 24px 0 0		
 
-.cube-right
-	transform-origin: 100%
-	transform-style: preserve-3d
-	background-color: #c91e5a
-	border-radius: 10px
-	width: 190px
-	height: 60px
-	position: absolute
-	transform: translate3d(0, 0, 50px) rotateX(0) rotateY(-90deg) rotateZ(0)
-.cube-left
-	transform-origin: 0%
-	transform-style: preserve-3d
-	background-color: #e49619
-	border-radius: 10px
-	width: 190px
-	height: 60px
-	position: absolute
-	transform: translate3d(0, 0, 50px)rotateX(0)rotateY(90deg)rotateZ(0)
+.list-number
+	list-style: number
+	padding-left: 20px
+	li
+		margin: 0 0 10px
+		&:last-child
+			margin: 0
+
+.form-feedback
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	.consent
+		margin: 24px 0 0
+		color: #202020
+		a
+			color: $accent
+	.checkbox
+		margin: 0 0 40px
+		color: #333333
+		font-size: 16px
+	.checkbox-custom
+		width: 20px
+		height: 20px
+		border-color: rgb(194, 194, 194)	
+	&__body
+		width: 100%
+	&__row
+		width: 100%
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
+		margin: 0 0 40px
+		h4
+			text-transform: uppercase
+			font-weight: normal
+			width: 224px
+			padding: 0 16px 0 0
+			font-size: 12px
+			color: #666666
+			sup
+				color: red
+		input
+			font-size: 15px
+			height: 51px
+			padding: 0 20px
+		textarea
+			padding: 14px 20px			
+			height: 98px
+			font-size: 15px
+	&__label
+		width: calc(100% - 224px)	
+		display: flex
+		align-items: flex-start
+	.number-order
+		background: #FCE1DC
+		padding: 8px 12px
+		color: $accent
+		font-size: 12px
+		margin-left: auto			
+	&__footer
+		padding: 0 0 0 224px
+
+.star-rating
+	display: flex
+	position: relative
+	label
+		width: 32px
+		height: 32px
+		position: relative
+		// fill: rgb(185, 185, 195)
+		z-index: 1
+		display: flex
+		align-items: center
+		justify-content: center
+		cursor: pointer
+		&:last-child
+			margin: 0
+
+		svg
+			fill: #CDA337
+			
+	input
+		display: none
+		
+
+.star-rating input:checked + label ~ label svg
+	fill: rgb(185, 185, 185)	
+
+.label-file
+	width: 100%
+	height: 91px
+	text-align: center
+	display: flex
+	align-items: center
+	justify-content: center
+	position: relative
+	z-index: 1
+	cursor: pointer
+	border: 1px solid #DEDEDE
+	padding: 10px
+	font-size: 15px
+	input
+		display: none
+	
+.drag-drop
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	&__item
+		cursor: pointer
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
+		z-index: 1
+		margin: 0 10px 10px 0
+		width: 172px
+		height: 98px
+		border: 1px solid $accent
+		&:last-child
+			margin: 0
+	.file-drop
+		border-color: #DEDEDE
+		&::before
+			display: none
+		[type='file']
+			display: none
+	.file-drop-download
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 0
+			width: 100%
+			height: 59px
+			background: url('../img/drag-bg.svg') no-repeat center
+			background-size: 100%
+			z-index: -1
+	&__image
+		border: none
+		img
+			width: 100%		
+
+.modal__div3
+	height: auto
+	top: 50%
+	right: auto
+	left: 50%
+	transform: translate(-50%,-50%)
+	
+	.modal__wrapper
+		border: 1px solid #DEDEDE
+		text-align: center
+		padding: 48px
+		max-width: 648px
+	.modal-head
+		border: none
+		padding: 0 0 24px
+		text-align: center
+		p
+			text-transform: uppercase
+			margin: 0 auto
+			font-size: 12px
+	.thanks-icon
+		margin: 0 auto 24px
+		width: 100%	
+	.modal-body
+		padding: 0
+	.modal-title
+		text-transform: none
+		width: 100%
+		margin: 0 auto 8px		
+	.btn-restart
+		margin: 40px auto 0	
+
 
 // footer
 footer

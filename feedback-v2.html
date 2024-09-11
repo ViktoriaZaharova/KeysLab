@@ -124,148 +124,142 @@
 		</div>
 	</header>
 
-	<section class="page thanks-page bg-grey">
+	<section class="page feedback-page">
 		<div class="container">
-			<div class="thanks-page__content">
-				<div class="thanks-icon">
-					<img src="img/checkarea.svg" alt="">
-
-				</div>
-				<h1>Спасибо за заказ!</h1>
-				<div class="box-text">
-					<p>В течении минуты на почту <strong>ed.jeanx@gmail.com</strong> придёт письмо с заказом. Если письмо не
-						пришло,
-						то проверьте папку Спам. Если письма нет и там, тогда напишите нам в чат. Наши специалисты помогут</p>
-				</div>
-				<div class="btn-group">
-					<a href="#" class="btn btn-border" target="_blank">Написать в поддержку</a>
-					<a href="#" class="btn btn-border" target="_blank">оставить отзыв</a>
-				</div>
-			</div>
-
-			<div class="w-100">
-				<div class="row">
-					<div class="col-6 mb-24 p-16">
-						<div class="order-box">
-							<ul class="list-characteristics">
-								<li>
-									<p>Заказ:</p><span>#456356</span>
-								</li>
-								<li>
-									<p>Дата:</p><span>28.08.2024</span>
-								</li>
-								<li>
-									<p>Время:</p><span>16:00</span>
-								</li>
-								<li>
-									<p>Состав:</p><span>Microsoft Windows 10 Pro</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-6 mb-24 p-16">
-						<div class="order-box">
-							<div class="personal-sale">
-								<h3>Персональная скидка <strong class="color-accent">15%</strong> на ближайший час</h3>
-								<div class="copy-paste">
-									<span class="copy-paste__text">personalpromo-15</span>
-									<a href="#" class="copy-paste__link">
-										<svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#copy"></use>
-										</svg></a>
+			<form method="post" class="form-feedback">
+				<div class="feedback-page__content">
+					<div class="form-feedback__body">
+						<div class="form-feedback__row">
+							<h4>О заказе</h4>
+							<div class="form-feedback__label">
+								<div class="box-text">
+									<p>Microsoft Office 2019 Professional Plus</p>
 								</div>
-								<div class="copy-paste__description">* данный промокод действует в течении 1 часа</div>
+								<div class="number-order">#4565756</div>
 							</div>
+						</div>
 
-							<div class="timer-box">
-								<h3>осталось</h3>
-								<div class="countdown-time countdown-time1"></div>
+						<div class="form-feedback__row">
+							<h4>оценка продукта<sup>*</sup></h4>
+							<div class="form-feedback__label">
+								<div class="star-rating">
+									<input type="radio" name="recipe-rating" id="recipe-star-1" value="1" checked="true">
+									<label for="recipe-star-1"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#star"></use>
+										</svg></label>
+									<input type="radio" name="recipe-rating" id="recipe-star-2" value="2" checked="true"><label
+										for="recipe-star-2"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#star"></use>
+										</svg></label>
+									<input type="radio" name="recipe-rating" id="recipe-star-3" value="3" checked="true">
+									<label for="recipe-star-3"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#star"></use>
+										</svg>
+									</label>
+									<input type="radio" name="recipe-rating" id="recipe-star-4" value="4" checked="true">
+									<label for="recipe-star-4"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#star"></use>
+										</svg>
+									</label>
+									<input type="radio" name="recipe-rating" id="recipe-star-5" value="5" checked="true">
+									<label for="recipe-star-5"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#star"></use>
+										</svg>
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-feedback__row">
+							<h4>Контакты <sup>*</sup></h4>
+							<div class="form-feedback__label">
+								<div class="w-100">
+									<div class="row">
+										<div class="col-6 p-16">
+											<label>
+												<span class="input-title">Имя</span>
+												<input type="text" placeholder="Ваше имя" name="name">
+											</label>
+										</div>
+										<div class="col-6 p-16">
+											<label>
+												<span class="input-title">E-mail</span>
+												<input type="text" placeholder="Ваш-email" name="mail">
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-feedback__row">
+							<h4>что можете сказать?</h4>
+							<div class="form-feedback__label">
+								<label><textarea name="message" placeholder="Комментарий"></textarea></label>
+							</div>
+						</div>
+
+						<div class="form-feedback__row">
+							<h4>Фото отзыва</h4>
+							<div class="form-feedback__label">
+								<!-- <label class="label-file">
+									<input type="file" name="file">
+									<span class="label-file__text"><span class="color-accent">Выберите</span> или перетащите фото сюда</span>
+								</label> -->
+								<div class="drag-drop">
+									<a href="#" class="drag-drop__item file-drop-download"><img src="img/img-icon.svg" alt=""></a>
+									<label class="drag-drop__item file-drop">
+										<input type="file" name="file">
+										<img src="img/cloud.svg" alt=""></label>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="form-feedback__row">
+							<h4>Фото отзыва</h4>
+							<div class="form-feedback__label">
+								<!-- <label class="label-file">
+									<input type="file" name="file">
+									<span class="label-file__text"><span class="color-accent">Выберите</span> или перетащите фото сюда</span>
+								</label> -->
+
+								<div class="drag-drop">
+									<a href="#" class="drag-drop__item drag-drop__image"><img src="img/drop-img.jpg" alt=""></a>
+									<label class="drag-drop__item file-drop">
+										<input type="file" name="file">
+										<img src="img/cloud.svg" alt=""></label>
+								</div>
 							</div>
 						</div>
 					</div>
+					<div class="form-feedback__footer">
+						<label class="checkbox">
+							<input type="checkbox" class="inp-check" name="check">
+							<span class="checkbox-custom"></span>
+							<span class="checkbox-text">Оставить отзыв анонимно</a></span>
+						</label>
+						<a href="#thanks__modal" class="btn btn-accent open_modal" type="button"><span>отправить</span></a>
+						<div class="consent">Оставляя отзыв, вы соглашаетесь <a href="#" class="color-accent" target="_blank">с
+								условиями обработки персональных
+								данных</a>
+						</div>
+					</div>
 				</div>
-			</div>
+				<div class="feedback-page__description">
+					<h3>Как написать отзыв</h3>
+					<div class="box-text">
+						<p>Опишите опыт покупки на сайтеи активации ключа в свободной форме или в виде ответов на вопросы:</p>
+						<ol class="list-number">
+							<li>Как быстро пришла доставка ключа?</li>
+							<li>Возникли ли у вас проблемы при активации?</li>
+							<li>Какие достойнства и недостатки вы заметили в процессе использования товара?</li>
+						</ol>
+					</div>
+				</div>
+			</form>
 		</div>
 	</section>
-
-
-	<section class="interesting">
-		<div class="container">
-			<div class="title-wrapper mb-40">
-				<h2>купите с промокодом</h2>
-			</div>
-
-			<div class="w-100">
-				<div class="row interesting-scroll-horizontal">
-					<div class="col-4 p-16 product-col">
-						<div class="product-card">
-							<div class="product-card__info">
-								<ul class="list-labels">
-									<li class="list-label__item bg-orange">хит продаж</li>
-								</ul>
-							</div>
-							<a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
-							<div class="product-card__body">
-								<a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
-								<div class="price-wrapper">
-									<div class="price">1990<sup>₽</sup></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-4 p-16 product-col">
-						<div class="product-card">
-							<div class="product-card__info">
-								<ul class="list-labels">
-									<li class="list-label__item bg-orange">хит продаж</li>
-								</ul>
-							</div>
-							<a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
-							<div class="product-card__body">
-								<a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
-								<div class="price-wrapper">
-									<div class="price">1990<sup>₽</sup></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-4 p-16 product-col">
-						<div class="product-card">
-							<div class="product-card__info">
-								<ul class="list-labels">
-									<li class="list-label__item bg-orange">хит продаж</li>
-								</ul>
-							</div>
-							<a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
-							<div class="product-card__body">
-								<a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
-								<div class="price-wrapper">
-									<div class="price">1990<sup>₽</sup></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-4 p-16 product-col">
-						<div class="product-card">
-							<div class="product-card__info">
-								<ul class="list-labels">
-									<li class="list-label__item bg-orange">хит продаж</li>
-								</ul>
-							</div>
-							<a href="product.html" class="product-card__img"><img src="img/product-new.png" alt=""></a>
-							<div class="product-card__body">
-								<a href="product.html" class="product-card__title">Microsoft Office 2019 Professional Plus</a>
-								<div class="price-wrapper">
-									<div class="price">1990<sup>₽</sup></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
 
 	<section class="subscribe bg-grey p-40">
 		<div class="container">
@@ -1251,6 +1245,26 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="modal__div modal__div3" id="thanks__modal">
+		<div class="modal__wrapper">
+			<div class="modal-head">
+				<div class="thanks-icon">
+					<img src="img/thanks-icon.svg" alt="">
+				</div>
+				<p>Великолепно!</p>
+			</div>
+
+			<div class="modal-body">
+				<h3 class="modal-title">Принято. Отзыв ушёл на проверку</h3>
+				<div class="box-text">
+					<p>Можете воспользоваться скидкой указав свою электронную почту при оформлений заказа.</p>
+				</div>
+				<a href="product-v2.html" class="btn btn-accent btn-restart"><span>к покупкам</span></a>
+			</div>
+		</div>
+
 	</div>
 
 	<!-- Пoдлoжкa -->

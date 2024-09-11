@@ -18,6 +18,19 @@
   .advantages .container {
     padding: 32px;
   }
+  .thanks-page {
+    margin: 160px 0 0;
+    padding: 0 0 40px;
+  }
+  .thanks-page .col-6 {
+    width: 100%;
+  }
+  .timer-box {
+    padding: 0 0 0 16px;
+  }
+  .personal-sale {
+    padding: 0 16px 0 0;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .product-card__img {
@@ -121,6 +134,32 @@
   }
   .help-box__img {
     height: 100px;
+  }
+  .feedback-page {
+    padding: 0;
+    margin: 0 0 80px;
+    overflow: hidden;
+  }
+  .feedback-page__content {
+    width: 100%;
+    padding: 40px 0 0;
+    order: 1;
+  }
+  .feedback-page__description {
+    width: calc(100% + 32px);
+    padding: 40px 16px;
+    max-width: none;
+    margin: 0 -16px;
+  }
+  .star-rating {
+    margin-left: auto;
+  }
+  .form-feedback__label .col-6 {
+    width: 100%;
+    margin: 0 0 16px;
+  }
+  .form-feedback__label .col-6:last-child {
+    margin: 0;
   }
 }
 /* Medium Devices, Desktops */
@@ -485,6 +524,9 @@
   .quiz-item {
     margin: 0 0 32px;
     padding: 0 0 24px;
+  }
+  .thanks-page__content .box-text {
+    font-size: 16px;
   }
 }
 /* Small Devices, Tablets */
@@ -1016,6 +1058,19 @@
   .fancybox__slide {
     padding: 0;
   }
+  .thanks-page h1 {
+    font-size: 20px;
+  }
+  .thanks-page__content {
+    margin: 0 auto 22px;
+  }
+  .thanks-page__content .btn-group .btn {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .thanks-page__content .box-text {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 650px) {
   .product-page__head {
@@ -1026,6 +1081,42 @@
   }
   .availability, .hot-offer {
     font-size: 12px;
+  }
+  .feedback-page {
+    margin: 0 0 40px;
+  }
+  .form-feedback__row h4 {
+    width: 100%;
+    padding: 0;
+    margin: 0 0 16px;
+  }
+  .form-feedback__label {
+    width: 100%;
+  }
+  .form-feedback__footer {
+    padding: 0;
+  }
+  .form-feedback [type=submit] {
+    width: 100%;
+  }
+  .star-rating {
+    margin-left: 0;
+  }
+  .drag-drop__item {
+    width: 120px;
+    height: 70px;
+  }
+  .drag-drop .file-drop-download::before {
+    height: 40px;
+  }
+  .modal__div3 .modal__wrapper {
+    max-width: 350px;
+    padding: 48px 24px;
+  }
+  .modal__div3 .modal__wrapper .thanks-icon::before {
+    width: 303px;
+    background: url("../img/confetti-mobile.svg") no-repeat center;
+    background-size: 100%;
   }
 }
 /* Extra Small Devices, Phones */
@@ -1857,6 +1948,52 @@
   .is-compact .fancybox__content > .f-button.is-close-btn, .fancybox__content > .f-button.is-close-btn {
     right: 12px;
     top: 24px;
+  }
+  .order-box {
+    padding: 16px;
+    flex-wrap: wrap;
+  }
+  .personal-sale {
+    width: 100%;
+    padding: 0 0 24px;
+    border: none;
+    border-bottom: 1px solid #c8c8c8;
+  }
+  .timer-box {
+    width: 100%;
+    padding: 24px 0 0;
+  }
+  .order-box .list-characteristics {
+    font-size: 14px;
+  }
+  .order-box .list-characteristics li span {
+    font-size: 14px;
+  }
+  .order-box h3 {
+    font-size: 20px;
+  }
+  .thanks-page {
+    margin: 153px 0 0;
+  }
+  .thanks-page h1 {
+    margin: 0 auto 8px;
+  }
+  .thanks-page__content {
+    margin: 0 auto 32px;
+    max-width: 350px;
+  }
+  .thanks-page__content .btn-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  .thanks-page__content .btn-group .btn {
+    width: 100%;
+  }
+  .thanks-page__content .box-text {
+    font-size: 14px;
+  }
+  .thanks-icon {
+    margin-bottom: 17px;
   }
 }
 @media only screen and (max-width: 480px) {
