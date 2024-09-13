@@ -1250,8 +1250,9 @@
 	<div class="modal__div modal__div3" id="thanks__modal">
 		<div class="modal__wrapper">
 			<div class="modal-head">
-				<div class="thanks-icon">
-					<img src="img/thanks-icon.svg" alt="">
+				<div class="thanks-icon thanks-icon-modal">
+					<img src="img/checkarea.svg" alt="">
+					<!-- <div id="lottie-animation"></div> -->
 				</div>
 				<p>Великолепно!</p>
 			</div>
@@ -1298,8 +1299,18 @@
 	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 	<script src="js/jQuery.countdownTimer.js"></script>
 	<script src="js/jQuery.countdownTimer-ru.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.3/lottie.min.js"></script>
 	<script src="js/common.js"></script>
 
+	<script>
+		const animation = lottie.loadAnimation({
+			container: document.getElementById('lottie-animation'), // контейнер для анимации
+			renderer: 'svg', // тип рендерера (может быть 'svg', 'canvas' или 'html')
+			loop: true, // зацикливание анимации
+			autoplay: true, // автоматический запуск анимации
+			path: 'js/animation.json' // путь к вашему JSON-файлу с анимацией
+		});
+	</script>
 </body>
 
 </html>

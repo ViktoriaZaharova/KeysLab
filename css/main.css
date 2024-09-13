@@ -4648,8 +4648,10 @@ header .container {
   align-items: center;
   justify-content: center;
   position: relative;
+  z-index: 1;
 }
-.thanks-icon::before {
+
+.thanks-icon-modal::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -4659,6 +4661,16 @@ header .container {
   height: 64px;
   background: url("../img/confetti.svg") no-repeat center;
   background-size: 100%;
+}
+
+#lottie-animation {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  width: 100%;
+  height: 240px;
+  z-index: -1;
 }
 
 .order-box {

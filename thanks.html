@@ -129,7 +129,7 @@
 			<div class="thanks-page__content">
 				<div class="thanks-icon">
 					<img src="img/checkarea.svg" alt="">
-
+					<div id="lottie-animation"></div>
 				</div>
 				<h1>Спасибо за заказ!</h1>
 				<div class="box-text">
@@ -1284,7 +1284,18 @@
 	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 	<script src="js/jQuery.countdownTimer.js"></script>
 	<script src="js/jQuery.countdownTimer-ru.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.3/lottie.min.js"></script>
 	<script src="js/common.js"></script>
+
+	<script>
+		const animation = lottie.loadAnimation({
+			container: document.getElementById('lottie-animation'), // контейнер для анимации
+			renderer: 'svg', // тип рендерера (может быть 'svg', 'canvas' или 'html')
+			loop: true, // зацикливание анимации
+			autoplay: true, // автоматический запуск анимации
+			path: 'js/animation.json' // путь к вашему JSON-файлу с анимацией
+		});
+	</script>
 
 </body>
 
