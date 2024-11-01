@@ -469,7 +469,7 @@
     width: 100%;
   }
   .catalog-page {
-    padding: 0;
+    padding: 20px 0 0;
   }
   .catalog-page .tabs__header {
     display: flex;

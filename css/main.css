@@ -3372,10 +3372,10 @@ header .container {
   position: relative;
   padding: 0 0 0 20px;
 }
-.list-dots:last-child {
+.list-dots li:last-child {
   margin: 0;
 }
-.list-dots:before {
+.list-dots li:before {
   content: "";
   position: absolute;
   left: 0;
