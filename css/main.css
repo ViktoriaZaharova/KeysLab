@@ -1223,9 +1223,8 @@ header .container {
   text-transform: uppercase;
 }
 .btn-menu__icon {
-  margin: 0 10px 0 0;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 .btn-menu:hover {
   color: #202020;
@@ -1302,9 +1301,25 @@ header .container {
 }
 .products-category li a {
   color: #202020;
+  display: flex;
+  align-items: center;
 }
 .products-category li a:hover {
   color: #CD5237;
+}
+.products-category li a .btn-menu__icon {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px 0 0;
+  stroke: #202020;
+}
+
+.header-nav__item-phone .header-nav__links-icon {
+  display: none;
 }
 
 .product-card {

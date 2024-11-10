@@ -114,7 +114,7 @@ input, textarea, select
 		color: $input
 
 textarea
-	resize: none		
+	resize: none
 
 .input-my
 	height: 52px
@@ -1146,9 +1146,9 @@ header
 	text-transform: uppercase
 
 	&__icon
-		margin: 0 10px 0 0
-		width: 32px
-		height: 32px
+		// margin: 0 10px 0 0
+		width: 24px
+		height: 24px
 
 	&:hover
 		color: $black
@@ -1232,9 +1232,23 @@ header
 
 		a
 			color: $black
-
+			display: flex
+			align-items: center
 			&:hover
 				color: $accent
+			.btn-menu__icon
+				width: 16px
+				height: 16px
+				min-width: 16px
+				display: flex
+				align-items: center
+				justify-content: center
+				margin: 0 8px 0 0
+				stroke: #202020
+
+.header-nav__item-phone
+	.header-nav__links-icon
+		display: none				
 
 // catalog
 .product-card
@@ -4188,7 +4202,7 @@ header
 	position: relative
 	z-index: 1
 
-.thanks-icon-modal	
+.thanks-icon-modal
 	&::before
 		content: ''
 		position: absolute
@@ -4207,7 +4221,7 @@ header
 	transform: translate(-50%,0)
 	width: 100%
 	height: 240px
-	z-index: -1	
+	z-index: -1
 
 .order-box
 	width: 100%
@@ -4309,7 +4323,7 @@ header
 			width: 100%
 	&__content
 		width: calc(100% - 424px)
-		padding: 0 24px 0 0		
+		padding: 0 24px 0 0
 
 .list-number
 	list-style: number
@@ -4336,7 +4350,7 @@ header
 	.checkbox-custom
 		width: 20px
 		height: 20px
-		border-color: rgb(194, 194, 194)	
+		border-color: rgb(194, 194, 194)
 	&__body
 		width: 100%
 	&__row
@@ -4359,11 +4373,11 @@ header
 			height: 51px
 			padding: 0 20px
 		textarea
-			padding: 14px 20px			
+			padding: 14px 20px
 			height: 98px
 			font-size: 15px
 	&__label
-		width: calc(100% - 224px)	
+		width: calc(100% - 224px)
 		display: flex
 		align-items: flex-start
 	.number-order
@@ -4371,7 +4385,7 @@ header
 		padding: 8px 12px
 		color: $accent
 		font-size: 12px
-		margin-left: auto			
+		margin-left: auto
 	&__footer
 		padding: 0 0 0 224px
 
@@ -4393,13 +4407,12 @@ header
 
 		svg
 			fill: #CDA337
-			
+
 	input
 		display: none
-		
 
 .star-rating input:checked + label ~ label svg
-	fill: rgb(185, 185, 185)	
+	fill: rgb(185, 185, 185)
 
 .label-file
 	width: 100%
@@ -4416,7 +4429,7 @@ header
 	font-size: 15px
 	input
 		display: none
-	
+
 .drag-drop
 	width: 100%
 	display: flex
@@ -4455,7 +4468,7 @@ header
 	&__image
 		border: none
 		img
-			width: 100%		
+			width: 100%
 
 .modal__div3
 	height: auto
@@ -4463,7 +4476,7 @@ header
 	right: auto
 	left: 50%
 	transform: translate(-50%,-50%)
-	
+
 	.modal__wrapper
 		border: 1px solid #DEDEDE
 		text-align: center
@@ -4479,16 +4492,15 @@ header
 			font-size: 12px
 	.thanks-icon
 		margin: 0 auto 24px
-		width: 100%	
+		width: 100%
 	.modal-body
 		padding: 0
 	.modal-title
 		text-transform: none
 		width: 100%
-		margin: 0 auto 8px		
+		margin: 0 auto 8px
 	.btn-restart
-		margin: 40px auto 0	
-
+		margin: 40px auto 0
 
 // footer
 footer

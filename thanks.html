@@ -50,10 +50,14 @@
 		<div class="header-top">
 			<div class="container">
 
-
 				<a href="index.html" class="logo"><img src="img/logo-header.svg" alt=""></a>
 
 				<ul class="products-category">
+					<li><a href="#menu__modal" class="open_modal products-category__dropdown">
+						<span class="btn-menu__icon icon-wrap"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#burger"></use>
+						</svg></span>
+						<span>Меню</span></a></li>
 					<li><a href="catalog-new.html">каталог</a></li>
 					<li><a href="#">WINDOWS</a></li>
 					<li><a href="#">office</a></li>
@@ -84,26 +88,28 @@
 							<span class="btn-basket__val">0</span>
 						</a>
 					</li>
+					
+					<li class="header-nav__item-telegram">
+						<a href="#" class="header-nav__links btn-cabinet link-tg">
+							<span class="header-nav__links-icon icon-wrap"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#tg"></use>
+								</svg></span>
+						</a>
+					</li>
+					<li class="header-nav__item-phone">
+						<a href="tel:+73432264625" class="header-nav__links btn-cabinet link-phone">
+							<span class="header-nav__links-icon icon-wrap"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#phone"></use>
+							</svg></span>
+							<span class="header-nav__links-text">8 343 226 46 25</span>
+						</a>
+					</li>
 					<li>
 						<a href="#menu__modal" class="header-nav__links btn-menu open_modal">
 							<span class="btn-menu__icon icon-wrap"><svg class="svg-icon">
 									<use xlink:href="img/sprite.svg#burger"></use>
 								</svg></span>
 							<!-- <span class="btn-menu__text">Меню</span> -->
-						</a>
-					</li>
-					<li class="header-nav__item-phone">
-						<a href="tel:+73432264625" class="header-nav__links btn-cabinet link-phone">
-							<span class="header-nav__links-icon icon-wrap"><svg class="svg-icon">
-									<use xlink:href="img/sprite.svg#phone"></use>
-								</svg></span>
-						</a>
-					</li>
-					<li class="header-nav__item-telegram">
-						<a href="#" class="header-nav__links btn-cabinet link-tg">
-							<span class="header-nav__links-icon icon-wrap"><svg class="svg-icon">
-									<use xlink:href="img/sprite.svg#tg"></use>
-								</svg></span>
 						</a>
 					</li>
 				</ul>
@@ -120,6 +126,13 @@
 					<li><a href="#">autodesk</a></li>
 					<li><a href="#">офисные приложения</a></li>
 				</ul>
+
+				<a href="#menu__modal" class="header-nav__links btn-menu open_modal">
+					<span class="btn-menu__icon icon-wrap"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#burger"></use>
+						</svg></span>
+					<!-- <span class="btn-menu__text">Меню</span> -->
+				</a>
 			</div>
 		</div>
 	</header>
